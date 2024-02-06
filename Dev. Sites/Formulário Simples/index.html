@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel = "stylesheet" type="text/css" href="estilo/estilo.css">
+</head>
+
+<body>
+
+<div id="interface">
+
+    <header id="cabecalho">
+        <h1>Formulário Teste para Praticar</h1>
+        <h2>Formulário de Pesquisa Básico</h2>
+    </header>
+
+    <section id="corpo">
+
+        <form>
+            <fieldset>
+                <legend><h1>Informações Pessoais</h1></legend>
+                <p><label for ="idNome" ><h2>Nome: </h2></label> <input type="text" name ="nNome" id="idNome" placeholder="Nome Completo" maxlength="80" size="50"></p>
+
+                <p><label for ="idEmail"><h2>Email: </h2></label> <input type="email" name ="nEmail" id="idEmail" placeholder="Endereço de email" maxlength="80" size="50"></p>
+
+                <p><label for ="idIdade"><h2>Idade(opcional): </h2></label> <input type="number" name ="nIdade" id="idIdade" min ="16" max ="122" value ="18"></p>
+
+                <p><label for ="idGenero"><h2>Gênero: </h2></label></p>
+                    <select nome ="nGenero" id ="idGenero" >
+
+                        <option value ="Ninformar">Prefiro não Informar</option>
+                        <option value ="Mcis">Mulher cisgênero</option>
+                        <option value ="Hcis">Homem cisgênero</option>
+                        <option value ="Mtrans">Mulher transgênero</option>
+                        <option value ="Htrans">Homem transgênero</option>
+                        <option value ="Nbinario">Não Binário</option>
+                        <option value ="Fluido">Fluido</option>
+                        <option value ="Outrogenero">Outros</option>
+
+                    </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h1>Pesquisa</h1></legend>
+
+                <p><h2>Com que frequência você preenche formulários? </h2> <br> <input type="radio" name="nFre" id ="idDia"> <label for ="idDia">Diariamente</label> <br> <input type="radio" name="nFre" id ="idSem" checked> <label for ="idSem">Semanalmente</label> <br> <input type="radio" name="nFre" id ="idMes"> <label for ="idMes">Mensalmente</label></p>
+
+                <p><label for="idLocal"><h2>Onde você costuma encontra formulários? </h2></label></p>
+                    <select id="idLocal" name="nLocal">
+                        <option value ="Sites">Sites</option>
+                        <option value ="App">Aplicativos</option>
+                        <option value ="Outrolocal">Outros</option>
+                    </select>
+
+                <p><h2>Quais informações você costuma preencher em formulários? </h2> <br>
+                <input type="checkbox" name="nNomecheck" id="idNomecheck" class="check"> <label for ="idNomecheck">Nome</label> <br>
+                <input type="checkbox" name="nIdadecheck" id="idIdadecheck" class="check" > <label for ="idIdadecheck">Idade</label> <br>
+                <input type="checkbox" name="nDatacheck" id="idDatacheck" class="check"> <label for ="idDatacheck">Data de Nascimento</label> <br>
+                <input type="checkbox" name="nGenerocheck" id="idGenerocheck"class="check" > <label for ="idGenerocheck">Gênero</label> <br>
+                <input type="checkbox" name="nCpfcheck" id="idCpfcheck" class="check"> <label for ="idCpfcheck">Cpf</label> <br>
+                <input type="checkbox" name="nEnderecocheck" id="idEnderecocheck" class="check"> <label for ="idEnderecocheck">Endereço (país, estado, cidade...)</label> <br>
+                <input type="checkbox" name="nEmailcheck" id="idEmailcheck" class="check"> <label for ="idEmailcheck">Email</label><br>
+                <input type="checkbox" name="nTelefonecheck" id="idTelefonecheck" class="check"> <label for ="idTelefonecheck">Telefone</label></p>
+
+                <p><h2>Escreva o que você acha sobre formulários: </h2><br> <textarea name="nOpiniao" id="idOpiniao" cols="50" rows="7" maxlength="250" placeholder="Escreva aqui"> </textarea></p>
+            </fieldset>
+
+            <input id="botao" type="submit" value="Enviar Resposta" name="nEnviar">
+
+        </form>
+
+    </section>
+
+
+</div>
+</body>
+</html>
